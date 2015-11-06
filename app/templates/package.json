@@ -1,0 +1,34 @@
+{
+  "name": "<%= name %>",
+  "version": "<%= version %>",
+  "description": "<%= description %>",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test ./node_modules/.bin/_mocha --delay --require should --reporter spec",
+    "test-cov": "NODE_ENV=test node ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --require should --delay",
+    "test-travis": "NODE_ENV=test node ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --report lcovonly -- --require should --delay"
+  },
+  "author": "<%= author %>",
+  "license": "MIT",
+  "devDependencies": {
+    "istanbul": "~0.4.0",
+    "mocha": "~2.3.3",
+    "should": "~7.1.1",
+    "run-sequence": "~1.1.4",
+    "gulp": "3.x.x",
+    "del": "^1.1.0"
+  },
+  "dependencies": {
+    "promise": "~7.0.4",
+    "lodash": "~3.10.1",
+    "through2": "~0.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "<%= repositoryUrl %>"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "<%= repositoryUrl %>/issues"
+  }
+}
