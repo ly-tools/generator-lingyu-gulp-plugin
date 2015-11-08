@@ -8,10 +8,10 @@ var testPath = path.join(CWD, 'test');
 
 function runTest(testCase) {
   var casePath = path.join(testPath, testCase.name);
-  return new Promise(resolve => {
+  return new Promise(function(resolve) {
     process.chdir(casePath);
-    let gulpInst = require(path.join(casePath, 'gulpfile'));
-    runSeq.use(gulpInst)('default', () => {
+    var gulpInst = require(path.join(casePath, 'gulpfile'));
+    runSeq.use(gulpInst)('default', function() {
       process.chdir(CWD);
       resolve();
     });
