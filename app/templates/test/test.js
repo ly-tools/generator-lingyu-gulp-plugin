@@ -30,7 +30,7 @@ var chain = Promise.resolve();
 
 Cases.forEach(function(testCase) {
   chain = chain.then(function() {
-    runTest(testCase);
+    return runTest(testCase);
   });
 });
 
@@ -43,4 +43,6 @@ chain.then(function() {
     });
   });
   run();
+}).catch(function(e) {
+  throw e;
 });
