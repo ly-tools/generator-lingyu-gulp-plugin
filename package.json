@@ -1,6 +1,6 @@
 {
   "name": "generator-lingyu-gulp-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A gulp plugin generator of Yeoman",
   "homepage": "https://github.com/LingyuCoder/generator-lingyu-gulp-plugin",
   "author": "LingyuCoder <lingyucoder@gmail.com> (lingyucoder.github.io)",
