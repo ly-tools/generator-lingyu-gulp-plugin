@@ -1,14 +1,12 @@
 'use strict';
-var Gulp = require('gulp').Gulp;
-var gulp = new Gulp();
-var plugin = require('../../index');
-var del = require('del');
+const Gulp = require('gulp').Gulp;
+const gulp = new Gulp();
+const plugin = require('../../index');
+const del = require('del');
 
-gulp.task('clean', function(cb) {
-  del('build', cb);
-});
+gulp.task('clean', cb => del('build', cb));
 
-gulp.task('default', ['clean'], function() {
+gulp.task('default', ['clean'], () => {
   return gulp.src('src/**/*')
     // ...
     .pipe(plugin({

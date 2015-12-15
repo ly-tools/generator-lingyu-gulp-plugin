@@ -27,11 +27,7 @@ const Cases = [{
 
 let chain = Promise.resolve();
 
-Cases.forEach(function(testCase) {
-  chain = chain.then(function() {
-    return runTest(testCase);
-  });
-});
+Cases.forEach(testCase => chain = chain.then(() => runTest(testCase)));
 
 chain.then(() => {
   describe('...', () => {

@@ -44,7 +44,7 @@ module.exports = (appname, type) => {
       return data => {
         DIRECTORIES.forEach(val => ctx.directory(val, val));
         ctx.template('gitignore', '.gitignore');
-        FILES.forEach(name => ctx.template(name, name, data););
+        FILES.forEach(name => ctx.template(name, name, data));
         done();
       };
     }
