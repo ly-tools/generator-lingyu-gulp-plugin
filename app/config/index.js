@@ -10,13 +10,13 @@ const FILES = [
   'README.md'
 ];
 
-module.exports = (appname, type) => {
+module.exports = (appname) => {
   const name = appname.split(' ').join('-');
   const common = [{
     type: 'input',
     name: 'name',
     message: 'Name',
-    default: name.indexOf('gulp-') === 0 ? name : 'gulp-' + name
+    default: name.indexOf('gulp-') === 0 ? name : `gulp-${name}`
   }, {
     type: 'input',
     name: 'version',
@@ -31,11 +31,6 @@ module.exports = (appname, type) => {
     type: 'input',
     name: 'description',
     message: 'Description',
-    default: '...'
-  }, {
-    type: 'input',
-    name: 'repositoryUrl',
-    message: 'Repository URL',
     default: '...'
   }];
   return {

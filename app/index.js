@@ -5,7 +5,7 @@ const config = require('./config');
 
 module.exports = generators.Base.extend({
   constructor: function() {
-    generators.Base.apply(this, arguments)
+    generators.Base.apply(this, arguments);
   },
   prompting: function() {
     const files = fs.readdirSync(process.cwd());
