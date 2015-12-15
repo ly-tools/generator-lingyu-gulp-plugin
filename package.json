@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/LingyuCoder/generator-lingyu-gulp-plugin/issues/"
   },
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org/"
+  },
   "licenses": "MIT"
 }
