@@ -40,7 +40,7 @@ module.exports = (appname, type) => {
   }];
   return {
     prompt: common,
-    fn: function(ctx, done) {
+    fn: (ctx, done) => {
       return data => {
         DIRECTORIES.forEach(val => ctx.directory(val, val));
         ctx.template('gitignore', '.gitignore');
