@@ -1,16 +1,16 @@
 'use strict';
 
-var _ = require('lodash');
-var through = require('through2');
+const _ = require('lodash');
+const through = require('through2');
 
-var defaultOpts = {};
+const defaultOpts = {};
 
-module.exports = function(opts) {
+module.exports = opts => {
   opts = _.defaults(opts || {}, defaultOpts);
-  return through.obj(function(file, encoding, callback) {
+  return through.obj((file, encoding, callback) => {
     // your logic here
     callback(null, file);
-  }, function(done) {
+  }, done => {
     // your logic here
     done();
   });

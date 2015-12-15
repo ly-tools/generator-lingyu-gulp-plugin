@@ -19,7 +19,6 @@
     "del": "^1.1.0"
   },
   "dependencies": {
-    "promise": "~7.0.4",
     "lodash": "~3.10.1",
     "through2": "~0.4.0"
   },

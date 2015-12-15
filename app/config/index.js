@@ -1,8 +1,18 @@
 'use strict';
 
-module.exports = function(appname, type) {
-  var name = appname.split(' ').join('-');
-  var common = [{
+const DIRECTORIES = ['lib', 'test'];
+const FILES = [
+  '.eslintrc',
+  '.travis.yml',
+  'index.js',
+  'LICENSE',
+  'package.json',
+  'README.md'
+];
+
+module.exports = (appname, type) => {
+  const name = appname.split(' ').join('-');
+  const common = [{
     type: 'input',
     name: 'name',
     message: 'Name',
@@ -31,21 +41,10 @@ module.exports = function(appname, type) {
   return {
     prompt: common,
     fn: function(ctx, done) {
-      return function(data) {
-        ['lib', 'test'].forEach(function(val) {
-          ctx.directory(val, val);
-        });
+      return data => {
+        DIRECTORIES.forEach(val => ctx.directory(val, val));
         ctx.template('gitignore', '.gitignore');
-        [
-          '.eslintrc',
-          '.travis.yml',
-          'index.js',
-          'LICENSE',
-          'package.json',
-          'README.md'
-        ].forEach(function(name) {
-          ctx.template(name, name, data);
-        });
+        FILES.forEach(name => ctx.template(name, name, data););
         done();
       };
     }

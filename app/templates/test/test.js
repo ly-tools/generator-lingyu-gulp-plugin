@@ -1,24 +1,23 @@
 'use strict';
 require('should');
-var path = require('path');
-var Promise = require('promise');
-var runSeq = require('run-sequence');
-var CWD = process.cwd();
-var testPath = path.join(CWD, 'test');
+const path = require('path');
+const runSeq = require('run-sequence');
+const CWD = process.cwd();
+const testPath = path.join(CWD, 'test');
 
 function runTest(testCase) {
-  var casePath = path.join(testPath, testCase.name);
-  return new Promise(function(resolve) {
+  const casePath = path.join(testPath, testCase.name);
+  return new Promise(resolve => {
     process.chdir(casePath);
-    var gulpInst = require(path.join(casePath, 'gulpfile'));
-    runSeq.use(gulpInst)('default', function() {
+    const gulpInst = require(path.join(casePath, 'gulpfile'));
+    runSeq.use(gulpInst)('default', () => {
       process.chdir(CWD);
       resolve();
     });
   });
 }
 
-var Cases = [{
+const Cases = [{
   desc: 'description of case1',
   name: 'case1'
 }, {
@@ -26,7 +25,7 @@ var Cases = [{
   name: 'case2'
 }];
 
-var chain = Promise.resolve();
+let chain = Promise.resolve();
 
 Cases.forEach(function(testCase) {
   chain = chain.then(function() {
@@ -34,15 +33,13 @@ Cases.forEach(function(testCase) {
   });
 });
 
-chain.then(function() {
-  describe('...', function() {
-    Cases.map(function(testCase) {
-      it(testCase.desc, function() {
-        // ...
-      });
-    });
+chain.then(() => {
+  describe('...', () => {
+    Cases.map(testCase => it(testCase.desc, function() {
+      // ...
+    }));
   });
   run();
-}).catch(function(e) {
+}).catch(e => {
   throw e;
 });
