@@ -4,9 +4,9 @@
   "description": "<%= description %>",
   "main": "index.js",
   "scripts": {
-    "test": "NODE_ENV=test ./node_modules/.bin/_mocha --delay --require should --reporter spec",
-    "test-cov": "NODE_ENV=test node ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --require should --delay",
-    "test-travis": "NODE_ENV=test node ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --report lcovonly -- --require should --delay"
+    "test": "NODE_ENV=test ./node_modules/.bin/_mocha --require should --reporter spec",
+    "test-cov": "NODE_ENV=test node ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --require should",
+    "test-travis": "NODE_ENV=test node ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --report lcovonly -- --require should"
   },
   "author": "<%= author %>",
   "license": "MIT",
@@ -14,13 +14,15 @@
     "istanbul": "~0.4.0",
     "mocha": "~2.3.3",
     "should": "~7.1.1",
-    "run-sequence": "~1.1.4",
+    "run-gulp-task": "^0.1.1",
+    "pretty-error": "~2.0.0",
     "gulp": "3.x.x",
     "del": "^1.1.0"
   },
   "dependencies": {
     "lodash": "~3.10.1",
-    "through2": "~0.4.0"
+    "through2": "~0.4.0",
+    "gulp-util": "~3.0.7"
   },
   "repository": {
     "type": "git",

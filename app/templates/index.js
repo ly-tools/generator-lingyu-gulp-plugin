@@ -2,11 +2,10 @@
 
 const _ = require('lodash');
 const through = require('through2');
-
-const defaultOpts = {};
+const DEFAULT_OPTS = {};
 
 module.exports = opts => {
-  opts = _.defaults(opts || {}, defaultOpts);
+  opts = _.defaults(opts || {}, DEFAULT_OPTS);
   return through.obj((file, encoding, callback) => {
     // your logic here
     callback(null, file);

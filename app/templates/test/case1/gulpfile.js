@@ -1,6 +1,5 @@
 'use strict';
-const Gulp = require('gulp').Gulp;
-const gulp = new Gulp();
+const gulp = require('gulp');
 const plugin = require('../../index');
 const del = require('del');
 

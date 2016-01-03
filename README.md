@@ -24,6 +24,13 @@ $ yo lingyu-gulp-plugin
 $ npm install
 ```
 
+## Dev
+
+```bash
+$ npm run test # run test
+$ npm run test-cov # run code coverage
+```
+
 ## License
 
 The MIT License (MIT)

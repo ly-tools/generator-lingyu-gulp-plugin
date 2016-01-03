@@ -7,7 +7,8 @@ const FILES = [
   'index.js',
   'LICENSE',
   'package.json',
-  'README.md'
+  'README.md',
+  'HISTORY.md'
 ];
 
 module.exports = (appname) => {
@@ -26,7 +27,7 @@ module.exports = (appname) => {
     type: 'input',
     name: 'author',
     message: 'Author',
-    default: 'Your name'
+    default: 'Your Github name'
   }, {
     type: 'input',
     name: 'description',
