@@ -3,4 +3,3 @@ node_js:
   - "stable"
   - "4.0.0"
   - "5.0.0"
-script: "npm install -g yo && npm install -g ./ && mkdir test && cd test && yo lingyu-gulp-plugin && npm install && npm run test"
