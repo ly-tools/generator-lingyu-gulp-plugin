@@ -1,11 +1,11 @@
 # generator-lingyu-gulp-plugin
 
-[![Build Status](https://travis-ci.org/LingyuCoder/generator-lingyu-node-modules.png)](https://travis-ci.org/LingyuCoder/generator-lingyu-node-modules)
-[![Dependency Status](https://david-dm.org/LingyuCoder/generator-lingyu-node-modules.svg)](https://david-dm.org/LingyuCoder/generator-lingyu-node-modules)
-[![NPM version](http://img.shields.io/npm/v/generator-lingyu-node-modules.svg?style=flat-square)](http://npmjs.org/package/generator-lingyu-node-modules)
+[![Build Status](https://travis-ci.org/LingyuCoder/generator-lingyu-gulp-plugin.png)](https://travis-ci.org/LingyuCoder/generator-lingyu-gulp-plugin)
+[![Dependency Status](https://david-dm.org/LingyuCoder/generator-lingyu-gulp-plugin.svg)](https://david-dm.org/LingyuCoder/generator-lingyu-gulp-plugin)
+[![NPM version](http://img.shields.io/npm/v/generator-lingyu-gulp-plugin.svg?style=flat-square)](http://npmjs.org/package/generator-lingyu-gulp-plugin)
 [![node](https://img.shields.io/badge/node.js-%3E=_4.0-green.svg?style=flat-square)](http://nodejs.org/download/)
-[![License](http://img.shields.io/npm/l/generator-lingyu-node-modules.svg?style=flat-square)](LICENSE)
-[![npm download](https://img.shields.io/npm/dm/generator-lingyu-node-modules.svg?style=flat-square)](https://npmjs.org/package/generator-lingyu-node-modules)
+[![License](http://img.shields.io/npm/l/generator-lingyu-gulp-plugin.svg?style=flat-square)](LICENSE)
+[![npm download](https://img.shields.io/npm/dm/generator-lingyu-gulp-plugin.svg?style=flat-square)](https://npmjs.org/package/generator-lingyu-gulp-plugin)
 
 A gulp plugin generator of Yeoman
 
