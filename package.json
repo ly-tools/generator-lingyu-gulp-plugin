@@ -2,7 +2,7 @@
   "name": "generator-lingyu-gulp-plugin",
   "version": "3.0.0",
   "description": "A gulp plugin generator of Yeoman",
-  "homepage": "https://github.com/LingyuCoder/generator-lingyu-gulp-plugin",
+  "homepage": "https://github.com/ly-tools/generator-lingyu-gulp-plugin",
   "author": "LingyuCoder <lingyucoder@gmail.com> (lingyucoder.github.io)",
   "files": [
     "app"
@@ -21,11 +21,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:LingyuCoder/generator-lingyu-gulp-plugin.git",
-    "web": "https://github.com/LingyuCoder/generator-lingyu-gulp-plugin"
+    "url": "git@github.com:ly-tools/generator-lingyu-gulp-plugin.git",
+    "web": "https://github.com/ly-tools/generator-lingyu-gulp-plugin"
   },
   "bugs": {
-    "url": "https://github.com/LingyuCoder/generator-lingyu-gulp-plugin/issues/"
+    "url": "https://github.com/ly-tools/generator-lingyu-gulp-plugin/issues/"
   },
   "publishConfig": {
     "registry": "http://registry.npmjs.org/"
