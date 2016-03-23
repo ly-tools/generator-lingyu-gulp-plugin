@@ -1,8 +1,7 @@
-'use strict';
-require('should');
-const path = require('path');
-const run = require('run-gulp-task');
-const PrettyError = require('pretty-error');
+import 'babel-polyfill';
+import path from 'path';
+import run from 'run-gulp-task';
+import PrettyError from 'pretty-error';
 const pe = new PrettyError();
 const CWD = process.cwd();
 const testPath = path.join(CWD, 'test');

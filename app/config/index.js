@@ -1,10 +1,10 @@
 'use strict';
 
-const DIRECTORIES = ['lib', 'test'];
+const DIRECTORIES = ['src', 'test'];
 const FILES = [
+  '.babelrc',
   '.eslintrc',
   '.travis.yml',
-  'index.js',
   'LICENSE',
   'package.json',
   'README.md',
@@ -17,22 +17,22 @@ module.exports = (appname) => {
     type: 'input',
     name: 'name',
     message: 'Name',
-    default: name.indexOf('gulp-') === 0 ? name : `gulp-${name}`
+    'default': name.indexOf('gulp-') === 0 ? name : `gulp-${name}`
   }, {
     type: 'input',
     name: 'version',
     message: 'Version',
-    default: '1.0.0'
+    'default': '1.0.0'
   }, {
     type: 'input',
     name: 'author',
     message: 'Author',
-    default: 'Your Github name'
+    'default': 'Your Github name'
   }, {
     type: 'input',
     name: 'description',
     message: 'Description',
-    default: '...'
+    'default': '...'
   }];
   return {
     prompt: common,
@@ -40,7 +40,7 @@ module.exports = (appname) => {
       return data => {
         DIRECTORIES.forEach(val => ctx.directory(val, val));
         ctx.template('gitignore', '.gitignore');
-        FILES.forEach(name => ctx.template(name, name, data));
+        FILES.forEach(filename => ctx.template(filename, filename, data));
         done();
       };
     }

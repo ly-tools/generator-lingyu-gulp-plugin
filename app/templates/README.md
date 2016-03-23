@@ -39,8 +39,8 @@ gulp.task('demo', function() {
 
 ```bash
 $ npm run test
-$ npm run test-cov
-$ npm run test-travis
+$ npm run build # building source files
+$ npm run dev # watching files change and building automaticly
 ```
 
 ## License
