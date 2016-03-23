@@ -1,7 +1,7 @@
 # generator-lingyu-gulp-plugin
 
-[![Build Status](https://travis-ci.org/LingyuCoder/generator-lingyu-gulp-plugin.png)](https://travis-ci.org/LingyuCoder/generator-lingyu-gulp-plugin)
-[![Dependency Status](https://david-dm.org/LingyuCoder/generator-lingyu-gulp-plugin.svg)](https://david-dm.org/LingyuCoder/generator-lingyu-gulp-plugin)
+[![Build Status](https://travis-ci.org/ly-tools/generator-lingyu-gulp-plugin.png)](https://travis-ci.org/ly-tools/generator-lingyu-gulp-plugin)
+[![Dependency Status](https://david-dm.org/ly-tools/generator-lingyu-gulp-plugin.svg)](https://david-dm.org/ly-tools/generator-lingyu-gulp-plugin)
 [![NPM version](http://img.shields.io/npm/v/generator-lingyu-gulp-plugin.svg?style=flat-square)](http://npmjs.org/package/generator-lingyu-gulp-plugin)
 [![node](https://img.shields.io/badge/node.js-%3E=_4.0-green.svg?style=flat-square)](http://nodejs.org/download/)
 [![License](http://img.shields.io/npm/l/generator-lingyu-gulp-plugin.svg?style=flat-square)](LICENSE)
