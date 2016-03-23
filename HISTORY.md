@@ -1,5 +1,9 @@
 # generator-lingyu-gulp-plugin
 
+## 3.0.0
+
+* ES 7
+
 ## 2.1.0
 
 * Upgrade run-gulp-task

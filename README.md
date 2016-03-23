@@ -9,6 +9,11 @@
 
 A gulp plugin generator of Yeoman
 
+* ES7 features with babel (async/await, import/export and so on)
+* mocha + shouldjs
+* istanbul
+* travis
+
 ## Installation
 
 ```bash
