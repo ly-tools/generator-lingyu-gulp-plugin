@@ -32,8 +32,12 @@ $ npm install
 ## Dev
 
 ```bash
-$ npm run test # run test
-$ npm run test-cov # run code coverage
+$ mkdir demo && cd demo
+$ yo lingyu-gulp-plugin
+$ npm install
+$ npm run dev # watch file change and run build automaticly
+$ npm run build # build files with babel
+$ npm run test # test with mocha and istanbul
 ```
 
 ## License

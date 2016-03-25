@@ -1,5 +1,9 @@
 # generator-lingyu-gulp-plugin
 
+## 3.0.1
+
+* Change istanbul to babel-istanbul
+
 ## 3.0.0
 
 * ES 7
